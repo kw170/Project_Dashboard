@@ -1,164 +1,228 @@
 body{
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 a{
-    text-decoration: none;
-    /* color:#FF3B3F; */
-    color:white;
-}
-a:hover{
-    color:#F4DECB;
+  text-decoration: none;
+  /* color:#FF3B3F; */
+  color:white;
 }
 ul{
-    list-style-type:none;
+  list-style-type:none;
 }
 img{
-    height:35px;
-    width: 35px;
+  height:35px;
+  width: 35px;
 }
 .container {
-    display: flex;
-  }
+  display: flex;
+}
 
 /* Header */
-  .header {
-    /* Add your header styles here */
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  background-color: #F4DECB;
+}
 
-  .top{
-    display: grid;
-    grid-template-columns: .45fr 4fr 5fr 1fr ;
-  }
-  .searchIcon, .input, .bell, .miniProfile, .smallName{
-    display: flex;
-    align-items: center;
-  }
 
-  .searchIcon{
-    grid-column: 1 / 2;
-    justify-content: flex-end;
-    margin-right:6px;
-  }
-  .input{
-    min-width:300px;
-    margin-top: 32px;
-    background-color: #F4DECB;
-    height:22px;
-    border-radius: 6px;
-    grid-column:2 / 3;
-  }
-  .otherIcons{
-    display: flex;
-    gap:18px;
-    grid-column: 4 /5;
-    margin-right:10px;
-  }
-  .miniProfile img{
-    border-radius: 50%;
-  }
-  a .smallName{
-    color:#49274A;
-    font-size:19px;
-  }
+.top{
+  background-color: #F4DECB;
+  display: grid;
+  grid-template-columns: .45fr 4fr 5fr 1fr ;
+}
+.searchIcon, .input, .bell, .miniProfile, .smallName{
+  display: flex;
+  align-items: center;
+}
 
-  /*Left side cotainer and contents  */
-  .left{
-    display: grid;
-    flex:1;
-    /* border: solid; */
-    min-width: 200px;
-    height:100vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* background-color: #CAEBF2; */
-    background-color: #94618E;
-    /* background-color: #49274A; */
-    /* color:#464646; */
-    color:white;
-    margin: 0;
-  }
-  
-  .title{
+.searchIcon{
+  grid-column: 1 / 2;
+  justify-content: flex-end;
+  margin-right:6px;
+}
+.input{
+  min-width:300px;
+  margin-top: 32px;
+  background-color: #F8EEE7;
+  height:26px;
+  border-radius: 6px;
+  grid-column:2 / 3;
+  color: #49274A;
+}
 
-    display: grid;
-    justify-content: center;
-  }
+/* Top Right Corner */
+.otherIcons{
+  display: flex;
+  gap:18px;
+  grid-column: 4 /5;
+  margin-right:10px;
+}
+.miniProfile img{
+  border-radius: 50%;
+  border: solid;
+  color:#49274A;
+  border-width:2.5px;
+  height:50px;
+  width: 50px;
+}
 
-  .nav{
+a .smallName{
+  color:#49274A;
+  font-size:19px;
+}
+a .smallName:hover{
+  color:#000000
+}
 
-  }
-  .nav2{
+/* Welcome/Intro and Buttons */
+.bottom{
+  display: flex;
+  background-color: #F4DECB;
+  padding-bottom:15px;
+}
 
-  }
+.welcome{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.kai{
+
+  font-size: 38px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+.welcomeText, .fullname{
+  margin:0px;
+}
+.username{
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.username a{
+  color: #94618E;
+}
+.username a:hover{
+  color:#49274A;
+}
+
+
+.buttons{
+  margin-right:10px;
+  flex:1 1 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:15px;
+}
+button {
+  height: 35px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  color:#F8EEE7;
+  background-color: #49274A;
+}
+button:hover{
+  background-color: #94618E;
+}
+
+/*Left side cotainer and contents  */
+.left{
+  display: grid;
+  flex:1;
+  /* border: solid; */
+  min-width: 200px;
+  height:100vh;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #94618E;
+  color:white;
+  margin: 0;
+}
+
+.title{
+
+  display: grid;
+  justify-content: center;
+}
+
+.nav{
+
+}
+.nav2{
+
+}
 
 /* Right side container and contents */
-  .right {
-    display: flex;
-    flex-direction: column;
-    flex:5 5 0;
-    background-color: #F8EEE7;
-    color:#49274A;
-  }
-  
-  
-  .content {
-    flex: 1;
-    display: flex;
-    border: solid;
-  }
-  .yourProjects{
-    margin: 12px 0px 4px 8px;
-    font-size:26px;
-  }
-  .projects {
-    display:flex;
-    flex-direction: column;
-    flex: 2.5;
-    border: solid;
-  }
-  .projectCards{
-    flex: 1;
-    display: grid;
-    /* border: solid; */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 15px;
-    padding:10px;
-  }
-  .creations{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border:solid;
-    background-color: #F4DECB;
-    border-radius: 6px;
-  }
-  .projectTitle{
-    margin:6px 0px 0px 6px;
-    font-weight: bold;
-    font-size:20px;
-  }
-  .projectDescription{
-    /* border:solid; */
-    margin:4px 0px 0px 4px;
-  }
+.right {
+  display: flex;
+  flex-direction: column;
+  flex:5 5 0;
+  background-color: #F8EEE7;
+  color:#49274A;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+}
+.yourProjects{
+  margin: 12px 0px 4px 8px;
+  font-size:26px;
+}
+.projects {
+  border: solid;
+  border-radius: 3px;
+  display:flex;
+  flex-direction: column;
+  flex: 2.5;
+}
+.projectCards{
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+  padding:10px;
+}
+.creations{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border:solid;
+  background-color: #F4DECB;
+  border-radius: 6px;
+}
+.projectTitle{
+  margin:6px 0px 0px 6px;
+  font-weight: bold;
+  font-size:20px;
+}
+.projectDescription{
+  /* border:solid; */
+  margin:4px 0px 0px 4px;
+}
 .links{
-    display:flex;
-    justify-content: flex-end;
-    gap: 18px;
-    margin-right: 10px;
-    margin-bottom: 4px;
+  display:flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-right: 10px;
+  margin-bottom: 4px;
 }
 
 
 
 /* Announcement and Trending Column */
-  .rightSide {
-    flex: 1;
-    border: solid;
-  }
+.rightSide {
+  flex: 1;
+  border: solid;
+  border-radius: 3px;
+}
 
 
 /* TO DO sidebar announcements and welcome */
-  
