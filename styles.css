@@ -16,8 +16,8 @@ ul{
     list-style-type:none;
 }
 img{
-    height:30px;
-    width: 30px;
+    height:35px;
+    width: 35px;
 }
 .container {
     display: flex;
@@ -26,6 +26,42 @@ img{
 /* Header */
   .header {
     /* Add your header styles here */
+  }
+
+  .top{
+    display: grid;
+    grid-template-columns: .45fr 4fr 5fr 1fr ;
+  }
+  .searchIcon, .input, .bell, .miniProfile, .smallName{
+    display: flex;
+    align-items: center;
+  }
+
+  .searchIcon{
+    grid-column: 1 / 2;
+    justify-content: flex-end;
+    margin-right:6px;
+  }
+  .input{
+    min-width:300px;
+    margin-top: 32px;
+    background-color: #F4DECB;
+    height:22px;
+    border-radius: 6px;
+    grid-column:2 / 3;
+  }
+  .otherIcons{
+    display: flex;
+    gap:18px;
+    grid-column: 4 /5;
+    margin-right:10px;
+  }
+  .miniProfile img{
+    border-radius: 50%;
+  }
+  a .smallName{
+    color:#49274A;
+    font-size:19px;
   }
 
   /*Left side cotainer and contents  */
@@ -122,4 +158,7 @@ img{
     flex: 1;
     border: solid;
   }
+
+
+/* TO DO sidebar announcements and welcome */
   
