@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+  }
+  .left{
+    flex:1;
+    border: solid;
+    min-width: 200px;
+    height:100vh;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex:5 5 0;
+  }
+  
+  .header {
+    /* Add your header styles here */
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    border: solid;
+  }
+  
+  .projects {
+    flex: 2;
+    border: solid;
+  }
+  
+  .rightSide {
+    flex: 1;
+    border: solid;
+  }
