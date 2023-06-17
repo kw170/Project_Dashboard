@@ -24,7 +24,7 @@ img{
 .header {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:30px;
   background-color: #F4DECB;
 }
 
@@ -45,13 +45,22 @@ img{
   margin-right:6px;
 }
 .input{
-  min-width:300px;
+  min-width:280px;
   margin-top: 32px;
   background-color: #F8EEE7;
-  height:26px;
-  border-radius: 6px;
+  height:30px;
+  border-radius: 10px;
   grid-column:2 / 3;
   color: #49274A;
+  border: none;
+}
+.input:hover{
+  background-color:#ecdfd5;
+  /* outline: solid;
+  outline-width: 1px; */
+}
+.input:focus{
+  background-color:#F8EEE7;
 }
 
 /* Top Right Corner */
@@ -86,7 +95,7 @@ a .smallName:hover{
 }
 
 .welcome{
-  margin-left: 10px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -187,16 +196,28 @@ button:hover{
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 15px;
+  column-gap: 30px;
+  row-gap: 20px;
   padding:10px;
+  margin: 0px 30px;
 }
 .creations{
   display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* border:solid; */
+  background-color: #F4DECB;
+  border-radius: 8px;
+}
+.projectContent{
+  display:flex;
   flex-direction: column;
   justify-content: space-between;
-  border:solid;
-  background-color: #F4DECB;
-  border-radius: 6px;
+}
+.color{
+  height:98%;
+  border: solid;
+  border-radius: 10px 0 0 10px;
 }
 .projectTitle{
   margin:6px 0px 0px 6px;
@@ -204,7 +225,8 @@ button:hover{
   font-size:20px;
 }
 .projectDescription{
-  /* border:solid; */
+  line-height: 26px;
+  font-size:18px;
   margin:4px 0px 0px 4px;
 }
 .links{
@@ -222,7 +244,24 @@ button:hover{
   flex: 1;
   border: solid;
   border-radius: 3px;
+  max-width: 300px;
 }
 
 
 /* TO DO sidebar announcements and welcome */
+.announcements{
+  margin:-8px 0px 0px 8px;
+}
+.announcementsCard, .trendingCard{
+  border:solid;
+  margin: 0px 20px 0px 12px;
+  border-radius:6px;
+  background-color: #F4DECB;
+}
+.trendingCard{
+  height:200px;
+}
+.announcementsCard{
+  height:300px;
+}
+
