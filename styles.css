@@ -253,15 +253,35 @@ button:hover{
   margin:-8px 0px 0px 8px;
 }
 .announcementsCard, .trendingCard{
-  border:solid;
   margin: 0px 20px 0px 12px;
   border-radius:6px;
   background-color: #F4DECB;
 }
 .trendingCard{
-  height:200px;
+  height:275px;
 }
 .announcementsCard{
-  height:300px;
+  height:400px;
+  display: flex;
+  flex-direction:column;
+}
+.subset{
+  display: flex;
+  flex-direction: column;
+  margin:8px 10px;
+  height:133px;
+  overflow:hidden;
+}
+.divider{
+  border-bottom: solid;
+  border-width:3px;
+}
+.subsetTitle{
+  margin:0;
+}
+.subsetDescription{
+  font-size: 14px;
+  margin-top: 4px;
+
 }
 
