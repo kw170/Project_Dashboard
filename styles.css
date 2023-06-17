@@ -18,6 +18,7 @@ img{
 }
 .container {
   display: flex;
+  height: 140vh;
 }
 
 /* Header */
@@ -56,8 +57,6 @@ img{
 }
 .input:hover{
   background-color:#ecdfd5;
-  /* outline: solid;
-  outline-width: 1px; */
 }
 .input:focus{
   background-color:#F8EEE7;
@@ -147,7 +146,7 @@ button:hover{
   flex:1;
   /* border: solid; */
   min-width: 200px;
-  height:100vh;
+  height:auto;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: #94618E;
   color:white;
@@ -200,6 +199,7 @@ button:hover{
   row-gap: 20px;
   padding:10px;
   margin: 0px 30px;
+  max-height: 120px;
 }
 .creations{
   display: flex;
@@ -261,7 +261,7 @@ button:hover{
   height:275px;
 }
 .announcementsCard{
-  height:400px;
+  height:350px;
   display: flex;
   flex-direction:column;
 }
@@ -285,3 +285,39 @@ button:hover{
 
 }
 
+
+
+
+/* Trending */
+.userPicture{
+  border-radius: 50%;
+}
+.profiles li{
+  display: flex;
+  gap:8px;
+  margin-top:10px;
+}
+.profiles ul{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-right: 10px;
+}
+.hello{
+  /* display: grid;
+  align-self:center; */
+}
+.profileDescription{
+  display: flex;
+  flex-direction: column;
+}
+.margin{
+  margin: 2px;
+}
+.major{
+  color:#94618E;
+  font-size:14px;
+}
+.name{
+  color:#49274A;
+}
