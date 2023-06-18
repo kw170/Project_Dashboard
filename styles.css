@@ -27,14 +27,13 @@ img{
   display: flex;
   flex-direction: column;
   gap:0px;
-  background-color: #F4DECB;
 }
 
 
 .top{
-  background-color: #F4DECB;
   display: grid;
   grid-template-columns: .45fr 4fr 5fr 1fr ;
+  background-color: #ecdfd5;
 }
 .searchIcon, .input, .bell, .miniProfile, .smallName{
   display: flex;
@@ -49,7 +48,7 @@ img{
 .input{
   min-width:280px;
   margin-top: 32px;
-  background-color: #F8EEE7;
+  background-color: white;
   height:30px;
   border-radius: 10px;
   grid-column:2 / 3;
@@ -57,10 +56,10 @@ img{
   border: none;
 }
 .input:hover{
-  background-color:#ecdfd5;
+  background-color:rgb(211, 211, 211);
 }
 .input:focus{
-  background-color:#F8EEE7;
+  background-color:white;
 }
 
 /* Top Right Corner */
@@ -90,7 +89,7 @@ a .smallName:hover{
 /* Welcome/Intro and Buttons */
 .bottom{
   display: flex;
-  background-color: #F4DECB;
+  background-color:#ecdfd5;
   padding-bottom:15px;
 }
 
@@ -182,7 +181,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   flex:5 5 0;
-  background-color: #F8EEE7;
+  background-color: white;
   color:#49274A;
 }
 
@@ -219,7 +218,7 @@ button:hover{
   /* flex-direction: column; */
   justify-content: space-between;
   /* border:solid; */
-  background-color: #F4DECB;
+  background-color:#ecdfd5;
   border-radius: 8px;
 }
 .projectContent{
@@ -268,7 +267,7 @@ button:hover{
 .announcementsCard, .trendingCard{
   margin: 0px 20px 0px 12px;
   border-radius:6px;
-  background-color: #F4DECB;
+  background-color:#ecdfd5;
 }
 .trendingCard{
   height:295px;
