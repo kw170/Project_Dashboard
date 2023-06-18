@@ -274,7 +274,7 @@ button:hover{
   height:295px;
 }
 .announcementsCard{
-  height:350px;
+  height:400px;
   display: flex;
   flex-direction:column;
 }
