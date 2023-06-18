@@ -19,13 +19,14 @@ img{
 .container {
   display: flex;
   height: 140vh;
+  flex: 1 1 0;
 }
 
 /* Header */
 .header {
   display: flex;
   flex-direction: column;
-  gap:30px;
+  gap:0px;
   background-color: #F4DECB;
 }
 
@@ -158,12 +159,22 @@ button:hover{
   display: grid;
   justify-content: center;
 }
-
-.nav{
-
+/* Navigation column */
+.nav ul, .nav2 ul{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
-.nav2{
+.nav ul > li, .nav2 ul > li{
+  display: flex;
+  gap:10px;
+  align-items: center;
+}
 
+.navs{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
 }
 
 /* Right side container and contents */
@@ -177,7 +188,7 @@ button:hover{
 
 
 .content {
-  flex: 1;
+  flex: 1 1 0;
   display: flex;
 }
 .yourProjects{
@@ -188,18 +199,20 @@ button:hover{
   border: solid;
   border-radius: 3px;
   display:flex;
+  flex:1 1 0;
   flex-direction: column;
   flex: 2.5;
+  overflow-y:auto;
 }
 .projectCards{
-  flex: 1;
+  flex: 1 1 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   column-gap: 30px;
   row-gap: 20px;
   padding:10px;
   margin: 0px 30px;
-  max-height: 120px;
+  max-height: 150px;
 }
 .creations{
   display: flex;
@@ -241,7 +254,7 @@ button:hover{
 
 /* Announcement and Trending Column */
 .rightSide {
-  flex: 1;
+  flex: 1 1 0;
   border: solid;
   border-radius: 3px;
   max-width: 300px;
@@ -258,7 +271,7 @@ button:hover{
   background-color: #F4DECB;
 }
 .trendingCard{
-  height:275px;
+  height:295px;
 }
 .announcementsCard{
   height:350px;
@@ -275,6 +288,7 @@ button:hover{
 .divider{
   border-bottom: solid;
   border-width:3px;
+  padding-bottom: 40px;
 }
 .subsetTitle{
   margin:0;
